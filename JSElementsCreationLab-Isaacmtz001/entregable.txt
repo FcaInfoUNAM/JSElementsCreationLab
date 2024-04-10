@@ -1,0 +1,27 @@
+Describe en el archivo entregable.txt por qué hay contenido en el body al revisar en el navegador web pero en vs code no
+no se mostrará en Visual Studio Code (VS Code) porque VS Code es un editor de código y no un navegador web. VS Code no tiene la capacidad de renderizar HTML y mostrarlo en una ventana de visualización como lo hace un navegador web.
+Cuando se ejecuta el código HTML, CSS y JavaScript en un navegador web, el navegador interpreta el código y lo renderiza en la pantalla, mostrando el contenido en el body y aplicando los estilos definidos en las hojas de estilo CSS.
+Por lo tanto, para ver el contenido del body y cómo se ve en el navegador web, es necesario abrir el archivo HTML en un navegador web
+
+createCard ¿es una función recursiva? Sí porque se llama a sí misma dentro de la función. Esto sucede en la siguiente línea de código:
+buttonBtn.addEventListener("click",createCard);
+
+Analiza el código y si hace falta investiga para responder en entregable.txt ¿qué es el valor document?
+En JavaScript, document es un objeto que representa el documento HTML cargado en el navegador. Proporciona una serie de métodos y propiedades que permiten a los desarrolladores acceder y manipular el contenido del documento HTML.
+
+Responde en entregable.txt ¿qué hace la función createElement?
+se utiliza para crear un nuevo elemento HTML en JavaScript, y luego se pueden agregar atributos y contenido adicionales al elemento utilizando otras funciones y propiedades de JavaScript.
+
+Responde en entregable.txt ¿qué hace la función appendChild?
+ se utiliza para agregar un nodo hijo a un nodo padre existente en JavaScript. El nodo hijo se especifica como un parámetro de la función, y la función devuelve el nodo hijo que se acaba de agregar al padre.
+
+Explica cómo cambia de color el botón y cómo se deshabilita
+La primera línea e.target.disabled=true; deshabilita el botón haciendo que ya no se pueda hacer clic en él.
+La segunda línea e.target.classList.remove("btn-outline-success"); elimina la clase CSS btn-outline-success del botón, lo que hace que pierda el estilo de color verde asociado a esa clase.
+La tercera línea e.target.classList.add("btn-outline-danger"); agrega la clase CSS btn-outline-danger al botón, lo que hace que adquiera el estilo de color rojo asociado a esa clase.
+La cuarta línea e.target.innerText= "Clicked" ; cambia el texto del botón a "Clicked", lo que indica al usuario que el botón ya ha sido presionado.
+En resumen, la variable e es un objeto que representa el evento click y se utiliza en este caso para deshabilitar el botón y cambiar su apariencia después de hacer clic
+
+Paso4 parte 2
+No hay cambios en la página porque los elementos creados con createElement aún no se han agregado al DOM. Para agregar los elementos al DOM, debes usar el método appendChild en un elemento existente del DOM
+El DOM (Document Object Model) es una representación en forma de árbol del contenido y la estructura de un documento HTML o XML. Cada nodo en el árbol representa un elemento o un fragmento de contenido en el documento, y se puede manipular utilizando lenguajes de programación como JavaScript.
