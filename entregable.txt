@@ -1,0 +1,37 @@
+1. La razón por la que en el navegador si hay contenido es porque al ejecutar el index.html se ejecuta un script de js que
+    crea elementos HTML y por eso es hasta que inspeccionamos en el navegador que lo vemos.
+
+2. createCard si es una función recursiva ya que se está llamando a si misma.
+
+3. "document" es un objeto incorporado y una parte fundamental del Modelo de Objetos del Documento (DOM). El DOM representa
+    la estructura de los documentos HTML y XML.
+    Con document:
+    - Seleccionar elementos existentes del documento: "document.getElementById("mainBody")" para seleccionar el elemento
+    con el ID "mainBody".
+
+4.  - Se pueden crear elementos HTML: "document.createElement("div")", por ejemplo, se usó para crear un nuevo elemento "div"
+    en el HTML.
+
+5. appendChild es una función utilizada para agregar un nodo al final de la lista de hijos de un elemento padre especificado.
+    En otras palabras, se utiliza para anidar un elemento HTML dentro de otro. En el código se hace:
+    - "divCardBody.appendChild(h5CardTitle)" y "divCardBody.appendChild(buttonBtn)": Añaden el título y el botón al cuerpo
+    de la tarjeta.
+    - "divCard.appendChild(divCardBody)": Añade el cuerpo de la tarjeta (que ahora incluye el título y el botón) a la tarjeta.
+    - "divCol.appendChild(divCard)": Añade la tarjeta a la columna.
+    - "body.appendChild(divCol): Añade la columna (que ahora incluye la tarjeta) al cuerpo del documento.
+
+6. Al poner "console.log(e)" en al función aparece:
+    PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …} y más información.
+
+    Está información corresponde a "e", por lo que "e" es un parámetro que representa el objeto del evento que se está manejando. 
+    Contiene información sobre el evento específico que ocurrió.
+    Como se maneja un evento de clic con `addEventListener("click", function(e) {...})`, "e" es un objeto `MouseEvent`
+    que contiene información sobre el clic, como las coordenadas del clic, el botón que se presionó, etc.
+
+7. La forma en la que cambia de color y se deshabilita el botón es cuando se ejecuta esta parte del código:
+    e.target.disabled=true; (deshabilita el botón que fue clickeado).
+    e.target.classList.remove("btn-outline-success");
+    e.target.classList.add("btn-outline-danger")
+    e.target.innerText= "Clicked"; (cambia el texto del botón a "clicked").
+
+8. La razón por la que no hay cambios es por que aún no se añaden los elementos HTML creados al documento HTML con appendChild().
