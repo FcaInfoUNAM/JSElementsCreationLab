@@ -1,0 +1,50 @@
+Paso 1
+    
+    ¿Por qué hay contenido en el body al revisar en el navegador web pero en vs code no?
+        Toda la información de lo que se está mostrando en el navegador web está alojada dentro de "js/cards.js"
+        Ahí podemos encontrar los elementos de HTML.
+
+
+Paso 2
+    
+    createCard ¿Es una función recursiva?
+        No es una función recursiva como tal. Se llama a sí misma cuando haces clic en un botón.
+        Pero esto depende de la acción del usuario, no de una llamada automática dentro de la función.
+
+    ¿Qué es el valor document?
+        "document" representa toda la página web en el navegador. 
+        Es como un contenedor grande que tiene toda la información y los elementos de la página
+
+    
+    ¿Qué hace la función createElement?
+        Crea un nuevo elemento HTML. Por ejemplo, si quieremos crear un nuevo párrafo debemos usar: 
+            document.createElement('p')
+
+    ¿Qué hace la función appendChild?
+        Añadir un elemento como hijo de otro. Aquí podemos usar:
+            div.appendChild(p) 
+        para poner el párrafo p dentro del div
+
+
+Paso 3
+    
+    Describe qué es la variable 'e'
+        Es un evento que sucede en la página, como un clic en un botón 
+        Con él podemos obtener información sobre ese evento en especifico.
+
+    Explica cómo es que cambia de color el botón y cómo se deshabilita
+        buttonBtn.addEventListener("click", function (e) {
+            createCard();
+            e.target.disabled = true; // Deshabilita el botón
+            e.target.classList.remove("btn-outline-success"); // Quita el color verde
+            e.target.classList.add("btn-outline-danger"); // Cambia a color rojo
+            e.target.innerText = "Clicked"; // Cambia el texto a "Clicked"
+        });
+
+
+Paso 4
+    ¿Por qué no hay cambios?
+        Porque fueron creados pero no fueron añadidos con "appendChild"
+
+    
+     
