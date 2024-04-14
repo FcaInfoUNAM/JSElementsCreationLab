@@ -1,0 +1,38 @@
+Paso 1
+3)La forma en la que se generó fue en el cards.js no en el index.html
+
+Paso 2.
+
+2) Si es una función recursiva porque se llama a si misma dentro de la función. Una función recursiva es aquella que 
+se llama a sí misma dentro de su propio cuerpo. 
+
+3) El valor de document hace referencia a todo lo que esta dentro de una pagina web (headers, contenido, etc.)
+
+4)La función createElement() es un método del objeto document en JavaScript que se utiliza para crear un nuevo elemento HTML 
+con el nombre especificado.
+-En nuestro caso genera una etiqueta nueva 
+
+5)La función appendChild() es un método del objeto Node en JavaScript que se utiliza para agregar un nodo (como un elemento HTML) 
+como hijo de otro nodo. Este método toma un único parámetro, que es el nodo que se va a agregar como hijo.
+
+
+Paso 3.
+
+2) Al darle click, agrega una nueva card, pero en la que se hizo el click aparece como que ya fue clickeada
+
+3)la variable e es un objeto de evento que se pasa a la función de escucha de eventos como argumento. Este objeto de evento 
+contiene información sobre el evento que activó la función, como el tipo de evento (por ejemplo, "clic"), el elemento de 
+destino en el que se hizo clic y cualquier dato asociado con el evento.
+ 
+3b) La declaración console.log(e) se utiliza con fines de depuración para imprimir el objeto de evento en la consola
+
+4) Para cambiar el color del botón, en el código de bootsrap.css habria que cambiar la clase dependiendo del color que
+se quiera el boton con JavaScript. Por ejemñlo el color verde se da con btn-outline-success y el color rojo en btn-outline-danger 
+
+4b) Para deshabilitar el botón, el código establece la propiedad "disabled" del elemento del botón en true.
+
+Paso 4.
+
+2) Con esta modificación, cada tarjeta que se crea con la función createCard() ahora incluirá un <label> con el 
+texto "new item title"  y un <input> de tipo texto dentro del cuerpo de la tarjeta. Pero no se ve porque todavía
+no esta tomada como parametro por la función principal.
