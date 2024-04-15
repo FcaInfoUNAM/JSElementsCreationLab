@@ -1,0 +1,29 @@
+1.
+3. Describe en el archivo entregable.txt por qué hay contenido en el body al revisar en el navegador web pero en vs code no 
+    - Debido a que se está generando dinámicamente a través de JavaScript en el navegador web.
+
+2.
+2. Responde en el archivo entregable.txt createCard ¿es una función recursiva?
+    - Sí, se invoca dentro de sí misma y crea un ciclo donde la función se llama repetidamente.
+
+3. Analiza el código y si hace falta investiga para responder en entregable.txt ¿qué es el valor document?
+    - Hace referencia a todo lo que está dentro de una página web.
+
+4. Responde en entregable.txt ¿qué hace la función createElement?
+    - Permite crear elementos del tipo especificado como argumento.
+
+5. Responde en entregable.txt ¿qué hace la función appendChild?
+    -  Agrega los elementos que se crean dinámicamente como hijo de otros elementos.
+
+3.
+3. Agrega en la función la siguiente linea y en el navegador revisa en la consola el resultado y describe en entregable.txt qué es la variable e?
+    - Es un parámetro de manejo de eventos, representa el objeto del evento.
+
+4. Explica cómo es que cambia de color el botón y cómo se deshabilita en entregable.txt?
+    -  El botón cambia de color mediante las funciones classList.remove() y classList.add() en el objeto 
+        target, estas funciones se utilizan para cambiar las clases de CSS del botón.
+        Para deshabilitar el botón, se le da un valor "true" a la propiedad disabled del objeto target.
+
+4.
+2. Carga nuevamente el navegador web y responde en entregable.txt ¿por qué no hay cambios?
+    - No se han agregado a ningún elemento existente, solo fueron declaradas. 
