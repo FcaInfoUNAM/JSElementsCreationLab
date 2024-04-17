@@ -1,0 +1,20 @@
+1. createCard ¿es una función recursiva?
+Sí, la función createCard es recursiva, esto significa que se llama a sí misma durante su ejecución, esto lo hace para crear una nueva tarjeta para cada elemento de una lista.
+
+2. ¿qué es el valor document?
+Es una variable global que representa el documento HTML actual cargado en el navegador, contiene información y propiedades que permiten acceder y manipular el contenido del documento
+
+3. ¿qué hace la función createElement?
+document.createElement: Es una función en JavaScript que se utiliza para crear elementos HTML de forma dinámica dentro de la página web. Toma un único argumento, que es una cadena que representa el nombre de la etiqueta HTML del elemento que deseas crear.
+
+4. ¿qué hace la función appendChild?
+se utiliza para agregar un nuevo nodo hijo al final de la lista de hijos de un nodo padre especificado. 
+
+5. ¿qué es la variable e?
+Este objeto contiene información detallada sobre el evento que se ha producido, como el tipo de evento, el elemento objetivo, la posición del cursor, las teclas modificadoras presionadas, entre otros datos.
+
+6. explica cómo es que cambia de color el botón y cómo se deshabilita
+Es por las funciones e.target.classList.remove("btn-outline-success") y e.target.classList.add("btn-outline-danger") que esta relacionado en el código css, al comentar la linea donde se presenta btn-outline-success y hacer click en el botón su color se mantiene en verde, cuando se comenta la linea donde aparece btn-outline-danger y hacer click en el botón su color se mantiene en verde. 
+
+7. ¿por qué no hay cambios?
+Se estan agregando correctamente pero dentro del codigo pero no se esta llamando a las instrucciones, por eso no se presenta algun cambio visible en la página
