@@ -1,0 +1,32 @@
+Paso 1:
+
+    ¿Por qué hay contenido en el body al revisar en el navegador web pero en vs code no?
+    El contenido del body se está generando a través de JavaScript.
+
+Paso 2:
+
+    createCard ¿es una función recursiva?
+    Sí, crea un ciclo para repetir la llamada de la función.
+
+    ¿qué es el valor document?
+    Es todo lo que se encuentra en una página web.
+
+    ¿qué hace la función createElement?
+    Crear elementos del tipo pasado como argumento.
+
+    ¿qué hace la función appendChild?
+    Añade elementos creados como hijos dentro de otros elementos existentes.
+
+Paso 3:
+
+    ¿qué es la variable e?
+    Representa el objeto relacionado al evento.
+
+    ¿cómo es que cambia de color el botón y cómo se deshabilita?
+    Cambia de color con el uso de las funciones classList.remove() y classList.add(). 
+    Para deshabilitar el botón se establece en la propiedad disabled el estado true.
+
+Paso 4:
+
+    ¿por qué no hay cambios?
+    Las funciones no están asociadas con ningún elemento.
