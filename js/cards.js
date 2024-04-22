@@ -1,6 +1,6 @@
 body = document.getElementById("mainBody");
 count =1;
-function createCard() {
+function createCard(title) {
     // <div class="col....">
     divCol = document.createElement("div");
     divCol.classList.add("col-12", "col-md-4", "col-xl-3");
@@ -17,16 +17,26 @@ function createCard() {
     h5CardTitle= document.createElement("h5");
     h5CardTitle.classList.add("card-title");
     h5CardTitle.innerText= count
+    h5CardTitle.innerText= title
 
     // <button class="btn btn-outline-success">
     buttonBtn = document.createElement("button");
     buttonBtn.classList.add("btn", "btn-outline-success");
     buttonBtn.innerText="Add new"
 
-    
+    labelFormLabel= document.createElement("label");
+    labelFormLabel.classList.add("form-label")
+    labelFormLabel.innerText="new item title" ;
+
+    //<input type="text" class="form-control mb-4">
+    inputFormControl=document.createElement("input");
+    inputFormControl.classList.add("form-control","mb-4")
+    inputFormControl.type="text";
 
     // ponemos etiquetas dentro de etiquetas
     divCardBody.appendChild(h5CardTitle);
+    divCardBody.appendChild(labelFormLabel);
+    divCardBody.appendChild(inputFormControl);
     divCardBody.appendChild(buttonBtn);
     divCard.appendChild(divCardBody);
     divCol.appendChild(divCard);
@@ -34,5 +44,12 @@ function createCard() {
 
     count ++;
     buttonBtn.addEventListener("click",createCard);
+    buttonBtn.addEventListener("click",function (e,innerText=inputFormControl.value) {
+        createCard(innerText);
+        e.target.disabled=true;
+        e.target.classList.remove("btn-outline-success");
+        e.target.classList.add("btn-outline-danger")
+        e.target.innerText= "Clicked" ;
+    });
 }
-createCard();
+createCard("title");

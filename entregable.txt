@@ -1,0 +1,28 @@
+1. Describe en el archivo entregable.txt por qué hay contenido en
+el body al revisar en el navegador web pero en vs code no
+R: Porque en el body está plano, no hay nada, hasta que lo mando cargar en JavaScript.
+2. ¿Es una función recursiva?
+R:Sí es función recursiva.
+3. ¿Qué es el valor document?
+R: Contiene todo lo que está dentro de una página web.
+Una variable que maneja en la memoria el contenido de
+la página que se ingresa y es cargada en un navegador.
+4. ¿Qué hace la función createElement?
+R: Es una función que va a ir creando las etiquetas, y
+el elemento que se le de como parámetro.
+5. ¿Qué hace la función appendChild?
+R: Es un nodo que agrega uno nuevo al final de cada lista de un elemento antes que él.
+6. Describe en entregable.txt qué es la variable e
+R: Es un evento enviado como parámetro.
+7. Explica cómo es que cambia de color el botón y cómo
+se deshabilita en entregable.txt
+R: Deshabilita el botón de click, al target.disabled se le dio
+un valor de verdadero, y remove las clases y fueron cambiadas por btn.
+8. Carga nuevamente el navegador web
+y responde en entregable.txt ¿por qué no hay cambios?
+R: Porque no se ha agregado en ninguna parte del documento, solo fue declarado
+pero no se hace nada con él, se tiene que agregar con una funcionalidad.
+
+El orden en que envie el appendChild es el orden en que me aparecerán las cosas.
+
+//Ejemplo de appendChild
