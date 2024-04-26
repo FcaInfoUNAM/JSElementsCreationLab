@@ -1,0 +1,32 @@
+PASO 1
+--¿por qué hay contenido en el body al revisar en el navegador web pero en vs code no?
+    Porque se está generando contenido dinámico que como tal no se ve reflejado de 
+    forma local en el código del index
+
+PASO 2
+--createCard ¿es una función recursiva?
+    Si, lo que pasa es que con ayuda del listener en el botón y con el contador llamado
+    "count" se va repitiendo esta función y así se va creando una tarjeta o un elemento
+    "card"
+--¿qué es el valor document?
+    Es como tal un objeto que parte de JavaScript y el cual proporciona métodos para 
+    interactuar con los elementos del documento html
+--¿qué hace la función createElement?
+    Lo que hace es crear nuevos elementos html como "div" o "button" y puede realizar 
+    diferentes operaciones con el
+--¿qué hace la función appendChild?
+    Organiza los elementos estableciendo una jerarquía dentro de la página web
+
+PASO 3
+--¿qué es la variable e?
+    Es una variable que representa el objeto de un "pointer event" o puntero de eventos
+    lo cual se refiere a aquellos eventos o acciones de interacción que tiene el usuario, 
+    en este caso con la pagina web
+--explica cómo es que cambia de color el botón y cómo se deshabilita
+    Cambia de color a través de las funciones e.target.classList.remove y e.target.classList.add
+    funciones que cambian la clase css del botón del objeto target
+    Se deshabilita dando un valor de verdadero "true" a disabled en el objeto target
+
+PASO 4
+--¿por qué no hay cambios?
+    Porque no están relacionadas a una función en específico como createCard o con algún evento
