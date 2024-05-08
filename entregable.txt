@@ -1,0 +1,24 @@
+PASO 1:
+    Por qué hay contenido en el body al revisar en el navegador web pero en vs code no
+Porque en visual solo se ve que se realizan los lllamados a los archivos de js que contienen 
+las caracteristicas o funciones que se realizaran
+
+PASO2:
+ ¿es una función recursiva?  Podria decirse que si porque se llama a la función cada vez que se da 
+ click en el boton y crea una nueva tarjeta
+
+ ¿qué es el valor document? En JavaScript, document es un objeto que representa el modelo del documento HTML actual. 
+ Es una parte fundamental de la API del DOM (Document Object Model)
+
+ ¿qué hace la función createElement? Con document realiza la creación de un nuevo elemento html
+
+  ¿qué hace la función appendChild? Es el encargo de añadir el elemento creado al body
+
+PASO 3:
+    explica cómo es que cambia de color el botón y cómo se deshabilita 
+    Se realiza a través de las propiedades de la función:
+    btn-outline-danger es el que realiza el cambio de color  
+    disabled=true establece la propiedad disabled del botón en true, lo que lo deshabilita.
+
+PASO 4: 
+    ¿por qué no hay cambios? Porque el label e input se debe agregar dentro de la función donde se crea el card
