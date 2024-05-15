@@ -1,0 +1,34 @@
+Paso 1
+¿Por qué hay contenido en el body al revisar en el navegador web pero en Visual Studio code no?
+Porque dentro de Visual Studio aún no hay contenido visible, por ende no aparece nada en el body hasta que carga JS
+
+
+Paso 2
+createCard ¿es una función recursiva?
+Si es una función recursiva
+
+¿Qué es el valor document?
+Hace referencia a todo lo que está dentro de una página web
+
+¿Qué hace la función createElement?
+Crea una etiqueta nueva
+
+¿Qué hace la función appendChild?
+Agrega nuevos elementos a un documento existente o para mover un elemento de la página
+
+
+Paso3
+Visualiza en el navegador lo que ocurre al agregar un nuevo elemento
+Al hacer click en el botón para agregar un elemento, no se queda solamente en "Add new", sino que indica que ya se dio click y no deja hacerlo nuevamente
+
+¿Qué es la variable e?
+El parámetro de la función en el botón
+
+¿Cómo es que cambia de color el botón y cómo se deshabilita?
+Para habilitar se usa e.target.disabled
+Para cambiar el color se usan clases, en este caso sería "danger"
+
+
+Paso 4
+¿Por qué no hay cambios?
+Porque no se ha agregado en ninguna parte
