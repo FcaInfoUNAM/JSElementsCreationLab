@@ -1,0 +1,24 @@
+Describe en el archivo entregable.txt por qué hay contenido en el body al revisar en el navegador web pero en vs code no.
+R.-Hay contenido en el body porque se está ejecutando codigo de JavaScript.
+
+Responde en el archivo entregable.txt createCard ¿es una función recursiva?
+R.-Si, porque cuando presionas el boton se vuelve a llamar a la misma función.
+
+Analiza el código y si hace falta investiga para responder en entregable.txt ¿qué es el valor document?
+R.-El objeto document tiene la finalidad de manejar en memoria el contenido de la página web cargada en el navegador.
+
+Responde en entregable.txt ¿qué hace la función createElement?
+R.- Crea algún elemento HTML.
+
+Responde en entregable.txt ¿qué hace la función appendChild?
+R.- Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especificado.
+
+Agrega en la función la siguiente linea y en el navegador revisa en la consola el resultado y describe en entregable.txt qué es la variable e
+R.- La variable "e" es la función que acabamos de crear que en este caso sería createCard.
+
+Explica cómo es que cambia de color el botón y cómo se deshabilita en entregable.txt
+R.- El color del boton se cambia con las lineas de "e.target.classList.remove("btn-outline-success");" y "e.target.classList.add("btn-outline-danger")", se deshabilitaría removiendo estas dos lineas.
+
+Carga nuevamente el navegador web y responde en entregable.txt ¿por qué no hay cambios?
+R.- No hay ningún cambio porque no estamos usando para nada esas lineas de código.
+
