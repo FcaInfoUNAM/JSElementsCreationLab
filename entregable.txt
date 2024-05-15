@@ -1,0 +1,35 @@
+1. createCard ¿es una función recursiva?
+Si, ya que casi al final hace un llamado a si misma
+
+2. ¿Qué es el valor document?
+representa cualquier página web cargada en el navegador
+y sirve como punto de entrada al contenido de la página web.
+
+3. ¿Que hace la función createElement?
+Crea un elemento HTML especificado por su tagName.
+
+4. ¿Qué hace la función appendChild?
+Agrega un nuevo nodo al final de la lista de un elemento hijo de
+un elemento padre especificado.
+
+5.Describe que es la variable e
+La variable e, es el evento que se desencadena al presionar el botón
+
+6. Explica cómo cambia el color el botón y cómo se deshabilita
+Se hacen con el método classlist
+
+    classList.remove("btn-outline-success") - Aqui se elimina la clase "btn-outline-success"
+        el cual es el encargado de darle estilo al botón
+
+    classList.add("btn-outline-danger") - Aqui se agrega la clase "btn-outline-danger"
+        que de igual forma le da estilo y color al botón
+
+y para desahibilitarlo se hizo de la siguiente forma
+
+    e.target.disabled=true; - Es el encargado de desactivar la funcionalidad del botón.
+
+7. ¿Por qué no hay cambios?
+No hay cambios porque los elementos label y input no estan siendo agregadas al documento
+y para poder agregarlar tenemos que utilizar la función appendChild.
+
+
