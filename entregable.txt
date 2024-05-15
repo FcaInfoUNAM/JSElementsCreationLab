@@ -1,0 +1,32 @@
+Pregunta1:
+Hay contenido en el body al revisar en el navegador web pero no en VS Code porque el navegador web está interpretando el código del documento Java script.
+
+PASO 2
+
+1. Función createCard:
+
+Sí, la función createCard es recursiva. Se llama a sí misma dentro de la función buttonBtn.addEventListener. Cada vez que se llama a sí misma, aumenta el valor de la variable count y crea una nueva tarjeta.
+
+2. Valor document:
+
+El valor document es un objeto global que representa el documento HTML actual. Proporciona acceso a los elementos del DOM, como el body, los divs, los botones, etc.
+
+3. Función createElement:
+
+La función createElement crea un nuevo elemento DOM del tipo especificado. En este caso, se utiliza para crear divs, h5, botones, etc.
+
+4. Función appendChild:
+
+La función appendChild agrega un nuevo elemento hijo al final de un elemento padre. En este caso, se utiliza para agregar divs a divs, h5 a divs, botones a divs, etc.
+
+
+PASO 3
+
+1. Al modificar el llamado addEvent listener, modificamos la manera en la que se agrega un nuevo elemento (se crean de dos en dos elementos a la hora de dar click en add new)
+
+2. La variable e en el código es un objeto que representa el evento que se ha producido. El objeto e contiene información sobre el evento, como el tipo de evento, el elemento objetivo y la posición del cursor. La variable e se utiliza para modificar el comportamiento del botón después de que se haya hecho clic en él.
+
+
+PASO 4
+
+1.No existen cambios porque javascrip es un lenguaje interpretado.
