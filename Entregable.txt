@@ -1,0 +1,20 @@
+Paso 1.3
+No se muestra ningún contenido del body porque el código dentro de esta sección es código de JavaScript y no de HTML.
+
+Paso 2.2
+La función createCard es recursiva.
+
+Paso 2.3
+El valor document puede referirse a la información contenida en un documento HTML o CSS.
+
+Paso 2.4
+La función createElement es un método de la API Web utilizado para crear un nuevo elemento HTML en un documento.
+
+Paso 2.5
+La función appendChild se utiliza en programación para agregar un nuevo nodo hijo al final de la lista de hijos de un nodo padre especificado. Es una función fundamental para manipular el Modelo de Objetos del Documento (DOM) y crear estructuras HTML dinámicas.
+
+Paso 3
+La variable e representa el evento de clic que se realiza sobre el botón de la tarjeta (card). Ahora, cada vez que se haga clic en el botón de la tarjeta, se creará una nueva tarjeta. Sin embargo, ya no se podrá hacer clic en el botón de la tarjeta anterior. Asimismo, los botones previamente clickeados se colocan en color rojo. Este cambio de color en el botón se debe a la clase btn-outline-danger.
+
+Paso 4.2
+No hay cambios en el navegador web después de agregar las funciones porque estas no están siendo llamadas en ningún momento.
