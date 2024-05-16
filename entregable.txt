@@ -1,0 +1,42 @@
+
+Paso 1
+1.1: Listo
+1.2: Listo
+1.3: ¿Por qué hay contenido en el body al revisar en el navegador web pero en vs code no?
+    Porque está almacenado lo del body en las carpetas de CSS y JavaScript. 
+    Haciendo que HTML solo muestre la estructura y sea más ligera su lectura y versatilidad en la edición concreta.
+
+Paso 2
+2.1: Listo
+2.2: createCard ¿es una función recursiva?
+    No, ya que la función createCard solo se repite, esto hace que no se llame asi misma
+    lo hace con un contador para crear una nueva tarjeta.
+2.3: ¿qué es el valor document?
+    proporciona acceso a todos los elementos html de la página.
+    esto nos poermite tener elementos html y por ende agregar elementos a la estructrua de la página.
+2.4: ¿qué hace la función createElement?
+    este pertenece al objeto document, entonces crea un nueo elemento en HTML, 
+    Esto nos poermite crear contenedores de tarjetas, títulos y boton de la tarjeta.
+2.5: ¿qué hace la función appendChild?
+    Anida elementos creados dentro de la estructura de la tarjeta.
+    Agregar la tarjeta completa al contenedor principal.
+
+Paso 3
+3.1: Listo
+3.2: Listo
+3.3: qué es la variable e
+    Es equivalente a i++ que significa incremental, entonces al darle click, nos incremente en 1 a la siguiente adición.
+3.4: explica cómo es que cambia de color el botón y cómo se deshabilita
+    Esto se logra con btn-outlinesucess y outline-danger con este botón podemos controlar el estilo
+    La parte de disabled se cambía a true para deshabilitar el botón.
+
+Paso 4
+4.1: Listo
+4.2: ¿Por qué no hay cambios?
+    No se anidan dentro de ningún otro elemento en la estructura HTML
+    falta un elemento de contenedor adecuado.
+4.3: Listo
+4.4: Listo
+4.5: Listo
+
+Paso 5: Listo
