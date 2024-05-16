@@ -22,12 +22,10 @@ function createCard() {
     buttonBtn = document.createElement("button");
     buttonBtn.classList.add("btn", "btn-outline-success");
     buttonBtn.innerText="Add new"
-
     // <label class="form-label">  
     labelFormLabel= document.createElement("label");
     labelFormLabel.classList.add("form-label")
     labelFormLabel.innerText="new item title" ;
-
     //<input type="text" class="form-control mb-4">
     inputFormControl=document.createElement("input");
     inputFormControl.classList.add("form-control","mb-4")
