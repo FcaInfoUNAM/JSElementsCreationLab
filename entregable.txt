@@ -1,0 +1,30 @@
+
+PASO 1
+
+¿Por qué hay contenido en el body al revisar en el navegador web pero en vs code no?
+R= Hay contenido en el body al revisar en el navegador web pero no en VS Code porque el navegador web está interpretando el código del documento JavaScript.
+______________________________________________________________________
+PASO 2:
+
+Función createCard:
+Es recursiva, llamándose a sí misma dentro de la función buttonBtn.addEventListener. Cada vez que se invoca, incrementa el valor de la variable count y genera una nueva tarjeta.
+
+Valor document:
+El objeto document es una referencia global que representa el documento HTML actual. Permite acceder a los elementos del DOM, como el body, los divs, los botones, entre otros.
+
+Función createElement:
+Esta función crea un nuevo elemento DOM del tipo especificado. En el contexto dado, se emplea para generar divs, h5, botones, y otros elementos.
+
+Función appendChild:
+La función appendChild agrega un nuevo elemento hijo al final de un elemento padre. Aquí, se utiliza para añadir divs a otros divs, h5 a divs, botones a divs, etc.
+______________________________________________________________________
+PASO 3:
+
+Al modificar el evento de addEventListener, se altera la forma en que se añade un nuevo elemento (se generan elementos en pares al hacer clic en "add new").
+
+La variable "e" en el código representa el objeto evento que ha ocurrido. Este objeto contiene información sobre el evento, como su tipo, el elemento objetivo y la posición del cursor. "e" se emplea para modificar el comportamiento del botón después de ser clickeado.
+______________________________________________________________________
+
+PASO 4:
+Carga nuevamente el navegador web y responde en entregable.txt ¿por qué no hay cambios?
+R= No hay cambios porque JavaScript es un lenguaje interpretado.
