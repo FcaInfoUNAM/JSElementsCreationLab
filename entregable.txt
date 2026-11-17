@@ -1,0 +1,51 @@
+¿Por qué hay contenido en el body al abrir el archivo en el navegador, pero ese mismo contenido
+ no aparece en el código fuente de VS Code?
+Porque el contenido visual no está escrito en el archivo HTML, sino que se genera dinámicamente 
+mediante JavaScript. Al final del archivo js/cards.js hay una llamada a la función createCard();
+que se ejecuta automáticamente cuando se carga la página. El navegador lee el script, ejecuta las
+instrucciones para crear los elementos (divs, h5, botón) y los inyecta en el DOM dentro del body,
+aunque en el código fuente original de VS Code el body esté vacío.
+
+
+¿createCard es una función recursiva? Justifica tu respuesta.
+No, no es una función recursiva pura. Una función recursiva se llama a sí misma directamente dentro
+de su propio bloque de ejecución para resolver un problema por partes. En este caso, createCard solo
+registra un evento (buttonBtn.addEventListener("click", createCard);). La función termina su 
+ejecución normalmente y no se vuelve a llamar a sí misma en ese momento; solo se ejecutará en el futuro
+si el usuario hace clic en el botón.
+
+¿Qué representa el valor document en JavaScript?
+Representa el DOM (Document Object Model) de la página web actual. Es el objeto principal que 
+proporciona la interfaz para que JavaScript pueda acceder, leer, modificar o eliminar todos los elementos
+HTML, atributos y estilos dentro de la página cargada en el navegador.
+
+¿Qué hace la función createElement?
+Es un método del objeto document que se encarga de crear en la memoria un nuevo elemento o etiqueta HTML
+(como un div, p, button, etc.) especificado en su parámetro. El elemento se crea vacío y no se muestra
+en la pantalla de inmediato hasta que se adjunta al DOM.
+
+¿Qué hace la función appendChild?
+Es un método que se utiliza para insertar un nodo (un elemento) al final de la lista de hijos de un 
+elemento padre especificado. Toma un elemento que fue creado previamente en memoria (por ejemplo,
+con createElement) y lo coloca físicamente "adentro" de otro contenedor en la estructura de la página,
+haciéndolo visible si el padre ya está en el DOM.
+
+
+
+¿Qué es la variable e?
+Es el Objeto Evento (Event Object). Cuando ocurre una acción (como hacer clic), el navegador genera 
+automáticamente este objeto y se lo pasa a la función. Contiene toda la información técnica sobre lo 
+que acaba de suceder: las coordenadas del mouse, qué tecla se presionó y, lo más importante, qué 
+elemento exacto del HTML recibió la acción.
+
+¿Cómo es que el botón cambia de color y se deshabilita?
+Lo logra utilizando la propiedad e.target. Esta propiedad hace referencia al elemento exacto que 
+disparó el evento (es decir, el botón específico al que se le dio clic). Una vez que JavaScript 
+tiene "agarrado" ese botón mediante e.target, modifica sus propiedades directamente: usa 
+.disabled = true para bloquearlo, modifica las clases CSS con .classList.remove/add para quitarle 
+el estilo verde y ponerle el rojo, y usa .innerText para sobrescribir su texto.
+
+¿Por qué aún no hay cambios visibles?
+Porque los elementos (label e input) apenas fueron creados en la memoria de JavaScript mediante 
+createElement, pero el navegador no los dibuja en la pantalla hasta que los conectamos a un 
+elemento padre que ya exista en el DOM usando la instrucción appendChild.
