@@ -1,0 +1,35 @@
+¿por qué hay contenido en el body al abrir el archivo en el navegador, pero ese mismo contenido no aparece en el código fuente de VS Code?
+
+Porque js/cards.js utiliza document y DOM para crear los elementos dinámicamente al ejecutarse.
+
+¿createCard es una función recursiva? Justifica tu respuesta.
+No, crea los elementos de su tarjeta y tiene a createCard como manejador para el evento click de su botón.
+
+¿Qué representa el valor document en JavaScript?
+Representa el objeto que permite acceder y manipular el documento HTML.
+
+
+¿Qué hace la función createElement?
+Crea un nuevo elemento HTML en memoria, pero no lo añade automáticamente al documento visible.
+
+
+¿Qué hace la función appendChild?
+Inserta un elemento como hijo de otro elemento dentro de DOM.
+
+
+¿Qué es la variable e?
+e representa el objeto Event al producirse el clic.
+
+¿Cómo es que el botón cambia de color y se deshabilita?
+e.target.disabled = true deshabilita el botón. Se elimina la clase CSS
+btn-outline-success y se agrega btn-outline-danger.
+
+
+¿Por qué todavía no hay cambios visibles al crear label e input?
+Las funciones document.createElement y classList.add crean o modifican
+elementos solamente en memoria. Los elementos no aparecen hasta que se insertan
+en el DOM mediante appendChild. 
+
+
+
+
