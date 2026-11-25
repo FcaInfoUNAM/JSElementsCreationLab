@@ -1,0 +1,27 @@
+=== PASO 1 ===
+¿Por qué hay contenido en el body al abrir el archivo en el navegador, pero ese mismo contenido NO aparece en el código fuente de VS Code?
+Porque el archivo en VS Code contiene el HTML estático inicial, mientras que al abrirlo en el navegador se ejecuta js/cards.js y se manipula el DOM en memoria creando y agregando nodos dinámicamente al body sin modificar el archivo en disco.
+
+=== PASO 2 ===
+- ¿createCard es una función recursiva? Justifica tu respuesta.
+No. Una función recursiva se llama a sí misma (directa o indirectamente) dentro de su propio cuerpo. En createCard(), el evento "click" registra un listener para ejecutar createCard cuando el usuario haga clic en el botón, pero no se invoca a sí misma durante su ejecución.
+
+- ¿Qué representa el valor document en JavaScript?
+Representa el objeto que modela el documento HTML cargado en el navegador (punto de entrada al DOM) y permite consultar, crear y modificar elementos de la página.
+
+- ¿Qué hace la función createElement?
+Crea en memoria un nuevo elemento HTML correspondiente al nombre de etiqueta indicado (como "div", "h5", "button", "label" o "input") para configurarlo y luego insertarlo en el DOM.
+
+- ¿Qué hace la función appendChild?
+Inserta un nodo hijo al final de los hijos de un elemento padre en el DOM (y si el nodo ya existía en el DOM, lo mueve a esa posición).
+
+=== PASO 3 ===
+- ¿Qué es la variable e?
+Es el objeto de evento (Event / PointerEvent) que el navegador pasa automáticamente a la función manejadora cuando ocurre el evento; contiene información del evento y referencias como e.target (el elemento que disparó el evento).
+
+- ¿Cómo es que el botón cambia de color y se deshabilita?
+Dentro del listener, e.target apunta al botón presionado: e.target.disabled = true deshabilita el botón, e.target.classList.remove("btn-outline-success") y e.target.classList.add("btn-outline-danger") cambian las clases de Bootstrap de verde a rojo, y e.target.innerText = "Clicked" cambia su texto.
+
+=== PASO 4 ===
+- ¿Por qué aún no hay cambios visibles al recargar después de crear labelFormLabel e inputFormControl?
+Porque aunque los elementos ya se crearon en memoria con document.createElement(...), todavía no se han agregado al árbol del DOM mediante appendChild(...).
