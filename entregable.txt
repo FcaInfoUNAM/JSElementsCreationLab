@@ -1,0 +1,27 @@
+Paso 1
+¿Por qué hay contenido en el body al abrir el archivo en el navegador, pero no aparece en el código fuente de VS Code?
+Porque el HTML tiene el body casi vacío y el contenido lo crea el archivo js/cards.js cuando la página se abre. Ese contenido solo existe en el navegador y no se escribe en el archivo.
+
+Paso 2
+¿createCard es una función recursiva?
+No, porque no se llama a sí misma mientras se ejecuta. Solo se deja asignada al botón y se vuelve a ejecutar hasta que alguien hace clic, cuando la llamada anterior ya terminó.
+
+¿Qué representa el valor document en JavaScript?
+Es el objeto que representa la página que está abierta en el navegador y permite buscar, crear y cambiar sus elementos.
+
+¿Qué hace la función createElement?
+Crea un elemento HTML nuevo con la etiqueta que se le indique, pero todavía no lo muestra en la página.
+
+¿Qué hace la función appendChild?
+Coloca un elemento dentro de otro como su último hijo, y así aparece en la página si el elemento padre ya está en ella.
+
+Paso 3
+¿Qué es la variable e?
+Es el evento que genera el clic. Guarda datos como el tipo de evento y el elemento donde ocurrió.
+
+¿Cómo es que el botón cambia de color y se deshabilita?
+Con e.target se obtiene el botón que recibió el clic. Se le pone disabled en true para deshabilitarlo, se quita la clase btn-outline-success y se agrega btn-outline-danger para cambiar el color, y al final se cambia su texto.
+
+Paso 4
+¿Por qué aún no hay cambios visibles?
+Porque la etiqueta y el campo de texto ya se crearon, pero todavía no se agregan a la página con appendChild.
